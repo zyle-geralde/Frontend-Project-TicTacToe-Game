@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tic Tac Toe
+        </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
+        <style>
+            .background{
+                background-image: url("puzzle-g4145cf8f9_1920.jpg");
+                background-size:cover;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 740px;
+                font-family: 'Rubik Spray Paint', cursive;
+            }
+            .maincont{
+                background-color: rgb(255, 249, 242);
+                display: flex;
+                flex-direction: column;
+                width: 360px;
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 5px;
+                border-color: rgb(141, 82, 6);
+                z-index: 2;
+            }
+            .contline{
+                display: flex;
+                flex-direction: row;
+            }
+            .choicecont{
+                height: 120px;
+                width: 120px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+                border-color: rgb(141, 82, 6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .title{
+                display: flex;
+                z-index: 2;
+                margin-bottom: 40px;
+                color: white;
+                font-size: 50px;
+                background-color: rgb(158, 88, 88);
+                padding: 10px 10px;
+                border-radius: 10px;
+            }
+            .pick{
+                height: 100px;
+                width: 100pxpx;
+                opacity: 0.0;
+                animation-name: mypick;
+                animation-duration: 0.2s;
+                animation-iteration-count: 1;
+            }
+            @keyframes mypick{
+                from {opacity: 0.0;}
+                to {opacity: 1.0;}
+            }
+            .pick2{
+                height: 100px;
+                width: 100pxpx;
+                opacity: 0.0;
+                animation-name: mypick2;
+                animation-duration: 0.6s;
+                animation-iteration-count: 1; 
+            }
+            @keyframes mypick2{
+                from {opacity: 0.0;}
+                to {opacity: 1.0;}
+            }
+            .gover{
+                font-size: 120px;
+                color: rgb(255, 0, 0);
+                margin-bottom: 60px;
+            }
+            .resttag{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(36, 36, 36);
+                height: 70px;
+                color:white;
+                text-decoration: none;
+                font-size: 30px;
+                width: 200px;
+                border-radius: 40px;
+                transition: 0.4s;
+                margin-bottom: 20px;
+                border-style: solid;
+                border-color: white;
+                border-width: 2px;
+            }
+            .resttag:hover{
+                background-color: white;
+                color: black;
+            }
+            .notfin{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.473);
+                top:0px;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                opacity: 0.0;   
+            }
+            .finish{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.473);
+                top:0px;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                opacity: 0.0;
+                animation-name: done;
+                animation-duration: 2s;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+                z-index: 3;
+            }
+            @keyframes done{
+                form {opacity: 0.0;}
+                to {opacity: 1.0;}
+            }
+            
+        </style>
+    </head>
+    <body class = background>
+        <div class = title>
+            Welcome to Tic Tac Toe
+        </div>
+
+        <div class = maincont>
+
+            <div class = contline>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>   
+            </div>
+
+            <div class = contline>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>   
+            </div>
+
+            <div class = contline>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>
+                <div class = choicecont>
+                </div>   
+            </div>
+
+        </div>
+        <div class = notfin>
+            <div class = gover>
+                GAME
+            </div>
+            <a href="tic tac toe.html"class = resttag>
+                Restart
+            </a>
+            <a href="Tic Tac Toe Game.html"class = resttag>
+                Home
+            </a>
+        </div>
+    </body>
+
+    <script src="tic tac toe.js"></script>
+</html>
+
+<!--Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3223740">Alexa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3223740">Pixabay</a>-->
